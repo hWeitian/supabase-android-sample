@@ -29,7 +29,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.notesapp.ui.theme.NotesAppTheme
-import kotlinx.serialization.Serializable
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 class MainActivity : ComponentActivity() {
@@ -47,13 +46,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
-@Serializable
-data class Note(
-    val id: Int,
-    val body: String
-)
 
 @Composable
 fun NotesList(
